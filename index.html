@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Overwatch2</title>
+  <title>오버워치 2</title>
 
   <!-- favicon.ico 루트 경로에 놓으면 자동으로 사진 연결해줌 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
@@ -21,11 +21,90 @@
 
   <!-- js -->
   <script defer src="youtube.js"></script>
+  <script defer src="main.js"></script>
 
 
 </head>
 <body>
-  
+  <!-- 헤더 -->
+  <header>
+    <div class="inner">
+
+      <!-- 로고 -->
+      <div class="front">
+        <a href="/" class="logo">
+          <img src="./images/블리자드로고.png" alt="블리자드로고">
+        </a>
+      </div>
+      
+      <!-- 드롭다운 -->
+      <div class="middle">
+        <div class="middle__logo">
+          <img src="./images/오버워치로고.png" alt="오버워치로고">
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">게임 정보</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>개요</li>
+            <li>자료실</li>
+            <li>패치노트</li>
+          </ul>
+        </div>
+
+        <div class="hero">
+          영웅
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">시즌</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>5시즌</li>
+            <li>6시즌</li>
+          </ul>
+        </div>
+
+        <div class="new">
+          새 소식
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">커뮤니티</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>토론장</li>
+            <li>프로필</li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <div class="select">
+            <span class="selected">샵</span>
+            <div class="caret"></div>
+          </div>
+          <ul class="menu">
+            <li>스토어</li>
+          </ul>
+        </div>
+
+      </div>
+
+
+
+
+    </div>
+  </header>
+
+
+  <!-- 배경 영상 + 글씨와 링크들 -->
   <section class="youtube">
     <div class="youtube__area">
       <div id="player"></div>
@@ -42,7 +121,9 @@
           8월 11일,<br>오버워치 2: 침공이 시작됩니다
         </div>
         <div>
-          <button class="btn">자세히 보기</button>
+          <a href="https://overwatch.blizzard.com/ko-kr/news/23964186/" target="_blank">
+            <button class="btn">자세히 보기</button>
+          </a>
         </div>
       </div>
 
