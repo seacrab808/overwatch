@@ -72,7 +72,7 @@ header .middle .middle__logo > img {
 }
 
 header .middle .dropdown {
-  padding: 10px 30px;;
+  padding: 10px;
   position: relative;
 }
 
@@ -82,6 +82,7 @@ header .middle .dropdown *  {
 
 header .middle .select {
   color: #16181f;
+  font-size: 20px;
   font-weight: 700;
   display: flex;
   justify-self: center;
@@ -90,10 +91,31 @@ header .middle .select {
   border-radius: 0.5em;
   padding: 15px 10px;
   cursor: pointer;
-  transition: background 0.3s;
+  transition: background .3s;
 }
 
-header .middle .select:hover {
+.hero div,
+.new div {
+  padding: 10px;
+}
+
+.hero,
+.new {
+  color: #16181f;
+  font-size: 20px;
+  font-weight: 700;
+  position: relative;
+  padding:  5px 15px;
+  margin: 0;
+  border-radius: 0.5em;
+  cursor: pointer;
+  transition:background .3s;
+  flex-wrap: nowrap;
+}
+
+header .middle .select:hover,
+.hero:hover,
+.new:hover {
   background-color: #d4d4d4;
 }
 
@@ -121,7 +143,7 @@ header .middle .select:hover {
   position: absolute;
   top: 80px;
   left: 50%;
-  width: 100%;
+  width: 15em;
   transform: translateX(-50%);
   opacity: 0;
   display: none;
@@ -130,7 +152,6 @@ header .middle .select:hover {
 }
 
 .menu li {
-  
   font-size: 18px;
   padding: 10px;
   cursor: pointer;
@@ -145,6 +166,54 @@ header .middle .select:hover {
   display: block;
   opacity: 1;
 }
+
+/* 상단바 오른쪽 부분 */
+header .end {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 50px;
+}
+
+header .end .search,
+header .end .account {
+  font-size: 21px;
+  font-weight: 700;
+  color: #16181f;
+  padding: 15px;
+  margin: 0 10px;
+  transition: background .3s;
+}
+
+header .end .search:hover,
+header .end .account:hover {
+  background-color: #d4d4d4;
+  border-radius: 12px;
+}
+
+header .end .account a {
+  display: flex;
+  color: #16181f;
+  text-decoration: none;
+}
+
+header .end .account a i {
+  padding-right: 15px;
+}
+
+header .end .play-now {
+  height: 45px;
+  border-radius: 18px;
+  text-align: center;
+  line-height: 2.5;
+  padding: 5px 10px;
+  margin-left: 15px;
+}
+
+header .end .play-now:hover {
+  cursor: pointer;
+}
+
 
 
 
