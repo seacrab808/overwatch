@@ -378,12 +378,13 @@ header .end .play-now:hover {
 }
 
 .youtube-player .box .box-link {
-  position: absolute;
   right: 50px;
-  width: 888px;
-  height: 500px;
-  background-color: red;
+  width: 55%;
+  height: 530px;
+  margin-right: 50px;
+  background-color: #1d253a;
 }
+/* 이거 calc()로 해야하는데 귀찮다... */
 
 .youtube-player .box .box-link #player2 {
   width: 100%;
