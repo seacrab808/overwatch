@@ -20,4 +20,20 @@ function onYouTubePlayerAPIReady() {
       }
     }
   });
+
+  new YT.Player('player2', {
+    videoId: 'F1CIhfaI0Hs', // 재생할 유튜브 영상 ID
+    playerVars: {
+      // autoplay: true, // 자동 재생 유무
+      // loop: true, // 반복 재생 유무
+      playlist: 'F1CIhfaI0Hs' // 반복 재생할 유튜브 영상 ID 목록
+    },
+    events: {
+      // 영상이 준비되었을 때,
+      onReady: function (event) {
+        event.target.mute(); // 음소거!
+      }
+    }
+  });
+
 }

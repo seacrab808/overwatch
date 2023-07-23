@@ -336,4 +336,56 @@ header .end .play-now:hover {
 }
 
 
+/* 새로운 모험 + 유튜브 영상 플레이 */
+.youtube-player {
+  width: 100%;
+  height: 700px;
+  background-image: url(images/background_img1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+}
 
+.youtube-player .box {
+    display: flex;
+  align-items: center;
+}
+
+.youtube-player .box .box-text {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 50px;
+}
+
+.youtube-player .box .box-text__title {
+  color: #1d253a;
+  font-weight: 900;
+  font-size: 80px;
+  padding-bottom: 40px;
+  line-height: 1.2;
+
+}
+
+.youtube-player .box .box-text__description {
+  color: #1d253a;
+  font-weight: 600;
+  font-size: 28px;
+  flex-wrap: wrap;
+  line-height: 1.3;
+}
+
+.youtube-player .box .box-link {
+  position: absolute;
+  right: 50px;
+  width: 888px;
+  height: 500px;
+  background-color: red;
+}
+
+.youtube-player .box .box-link #player2 {
+  width: 100%;
+  height: 100%;
+}
