@@ -7,7 +7,6 @@
 /* COMMON */
 body {
   font-family: "Poppins",Helvetica,Arial,sans-serif;
-  height: 1000vh;
 }
 
 .btn {
@@ -470,6 +469,11 @@ header .end .play-now:hover {
   border-radius: 4px;
 }
 
+.new-event .new-event__body .box .box-img {
+  width: 320px;
+  overflow: hidden;
+}
+
 .new-event .new-event__body .box img {
   width: 100%;
   height: 190px;
@@ -505,9 +509,6 @@ header .end .play-now:hover {
 
 
 
-
-
-
 .new-event .new-event__btn a {
   text-decoration: none;
 }
@@ -526,4 +527,15 @@ header .end .play-now:hover {
   font-size: 24px;
   font-weight: 900;
   letter-spacing: -2px;
+}
+
+.new-event .box a:hover .box-img img {
+  transform: scale(1.05);
+  z-index: -1;
+  transition: .15s;
+}
+
+.new-event .box a:hover .box-text {
+  background-color: #2d3a5a;
+  transition: .15s;
 }
