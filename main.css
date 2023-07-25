@@ -92,7 +92,12 @@ header .middle .middle__logo > img {
   color: #1d253a;
   font-size: 18px;
   font-weight: 700;
-  padding: 20px;
+  padding: 16px 20px;
+}
+
+.dropdown .dropdown-title i {
+  font-size: 13px;
+  padding-left: 3px;
 }
 
 .dropdown .dropdown-bar {
@@ -117,11 +122,20 @@ header .middle .middle__logo > img {
 .dropdown .dropdown-bar > li:hover {
   background-color: #e7e7e7;
   border-radius: 5px;
+  font-weight: 700;
 }
 
 .dropdown .title:hover .dropdown-bar{
   opacity: 1;
   display: block;
+}
+
+/* hover */
+.mouseover {
+  color: rgb(0, 0, 0);
+  background-color: #d4d4d4;
+  border-radius: 5px;
+  transition: .2s;
 }
 
 
