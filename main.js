@@ -30,7 +30,7 @@ menus.forEach(menu => {
 
 
 
-
+//영웅 탱딜힐
 new Swiper('.hero .swiper-container', {
   // direction: 'horizontal', <- 기본값
   slidesPerView: 1, //한번에 보여줄 슬라이드 개수
@@ -43,5 +43,27 @@ new Swiper('.hero .swiper-container', {
   pagination: {
     el: '.hero .swiper-pagination', //페이지 번호 요소 선택자
     clickable: true, //사용자의 페이지 번호 요소 제어
+  }
+});
+
+
+//전장
+new Swiper('.battle-field .swiper-container', {
+  slidesPerView: 1, 
+  spaceBetween: 0, 
+  slidesOffsetBefore: 0,
+  slidesOffsetAfter: 0,
+  centeredSlides: true, 
+  loop: true,
+    // autoplay: {
+  //   delay: 2000 //5s
+  // },
+  pagination: {
+    el: '.battle-field .swiper-pagination', 
+    clickable: true, 
+  },
+  navigation: {
+    prevEl: '.battle-field .swiper-prev',
+    nextEl: '.battle-field .swiper-next'
   }
 });

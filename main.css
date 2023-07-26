@@ -749,6 +749,7 @@ header .end .play-now:hover {
   margin-right: 30px;
 }
 
+
 .hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet:first-child {
     background-image: url("./images/탱커.png");
 }
@@ -761,7 +762,207 @@ header .end .play-now:hover {
   background-image: url("./images/힐러.png");
 }
 
+.hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet {
+  opacity: .7;
+}
+
 .hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet-active {
   background-color: rgba(255,255,255,.2);
-  
+  opacity: 1;
+}
+
+.hero .swiper-slide .text-group .swiper-pagination .swiper-pagination-bullet:hover {
+  opacity: 1;
+  background-color: rgba(255,255,255,.2);
+}
+
+
+/* 전장 */
+.battle-field {
+  position: relative;
+}
+
+.battle-field .inner {
+  position: absolute;
+  top: -30px;
+}
+
+.battle-field .swpier-wrapper {
+  transition-timing-function: linear;
+}
+
+
+.battle-field .background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.battle-field .push .background {
+  background: url('./images/전장사진-밀기배경.png'); 
+}
+
+.battle-field .scramble .background {
+  background: url('./images/전장사진-쟁탈.png'); 
+}
+
+.battle-field .guard .background {
+  background: url('./images/전장사진-호위.png'); 
+}
+
+.battle-field .mix .background {
+  background: url('./images/전장사진-혼합.png'); 
+}
+
+.battle-field .flag .background {
+  background: url('./images/전장사진-깃발뺏기.png'); 
+}
+
+.battle-field .battle .background {
+  background: url('./images/전장사진-섬멸전.png'); 
+}
+
+.battle-field .death .background {
+  background: url('./images/전장사진-데스매치.png'); 
+}
+
+.battle-field .team-death .background {
+  background: url('./images/전장사진-팀데스매치.png'); 
+}
+
+.battle-field .background .back-inner {
+  backdrop-filter: blur(40px);
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.battle-field .background .battle-top {
+  width: 740px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  position: relative;
+}
+
+.battle-field .background .battle-top .title {
+  padding-top: 40px;
+  font-size: 55px;
+  letter-spacing: -3px;
+}
+
+.battle-field .background .battle-top .description {
+  padding-top: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1.4;
+  opacity: .8;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+
+.battle-field .background .battle-middle img {
+  width: 600px;
+  border: 2px solid rgba(255,255,255,.2);
+}
+
+.battle-field .background .battle-top .swiper-pagination {
+  position: absolute;
+  top: 290px;
+}
+
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet {
+background-color: transparent;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 30px;
+border-radius: 50%;
+border: 2.8px solid #fff;
+width: 45px;
+height: 45px;
+padding: 1px;
+margin-right: 6px;
+outline: none;
+margin-right: 15px;
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:first-child {
+  background-image: url('./images/전장-밀기.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(2) {
+  background-image: url('./images/전장-쟁탈.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(3) {
+  background-image: url('./images/전장-호위.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(4) {
+  background-image: url('./images/전장-혼합.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(5) {
+  background-image: url('./images/전장-깃발뺏기.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(6) {
+  background-image: url('./images/전장-섬멸전.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:nth-child(7) {
+  background-image: url('./images/전장-데스매치.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:last-child {
+  background-image: url('./images/전장-팀데스매치.png');
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet {
+  opacity: .6;
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, .2);
+  opacity: 1;
+}
+
+.battle-field .background .battle-top .swiper-pagination .swiper-pagination-bullet:hover {
+  background-color: rgba(255, 255, 255, .2);
+  opacity: 1;
+}
+
+.battle-field .background .battle-end {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 30px;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+.battle-field .background .battle-end .title {
+  font-size: 35px;
+  letter-spacing: -2px;
+}
+
+.battle-field .background .battle-end .description {
+  padding-top: 20px;
+  opacity: .8;
+  margin-bottom: 70px;
+  letter-spacing: -1px;
+  width: 710px;
+  line-height: 1.4;
+  text-align: center;
 }
