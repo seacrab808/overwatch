@@ -783,10 +783,6 @@ header .end .play-now:hover {
   width: 100vw;
 }
 
-.battle-field .swpier-wrapper {
-
-}
-
 
 .battle-field .background {
   background-position: center;
@@ -1105,4 +1101,173 @@ margin-right: 15px;
 
 .last-hero .text-group .btn:hover {
   padding: 8px 12px;
+}
+
+.classedhr {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.classedhr .hred {
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  top: -3px;
+  z-index: 15;
+  background-color: #1d253a;
+}
+
+
+/* FOOTER */
+footer {
+  background-color: #1d253a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+}
+
+footer .social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+}
+
+footer .social .title {
+  font-size: 35px;
+  font-weight: 600;
+  letter-spacing: -3px;
+  word-spacing: 5px;
+  margin-bottom: 30px;
+}
+
+footer .social .icons {
+  font-size: 40px;
+  word-spacing: 15px;
+  text-decoration: none;
+  margin-bottom: 60px;
+}
+
+footer .social .icons a {
+  text-decoration: none;
+  opacity: .7;
+  color: #fff;
+}
+
+footer .social a:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+
+footer .footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .footer-info .logo {
+  margin-bottom: 30px;
+}
+
+footer .footer-info .logo img {
+  width: 125px;
+}
+
+footer .footer-info .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  opacity: .7;
+  margin-bottom: 40px;
+}
+
+footer .footer-info .info .info-hr {
+  margin: 0 5px;
+}
+
+
+footer .footer-info .info .info-hr::before {
+  content: "|";
+  margin-right: 1em;
+  font-size: 13px;
+}
+
+footer .footer-info .info .info-hr:first-child::before {
+  content: "";
+}
+
+footer .footer-info .battle-net {
+  color: #fff;
+  opacity: .7;
+  margin-bottom: 40px;
+}
+
+footer .footer-info .battle-net a {
+  color: #19a6f9;
+}
+
+footer .footer-info .battle-net img {
+  width: 15px;
+}
+
+
+footer .footer-info .license {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  opacity: .7;
+}
+
+footer .footer-info .license .license-top {
+  font-size: 11px;
+  text-align: center;
+  opacity: .5;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+
+footer .footer-info .license .license-end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 40px;
+}
+
+footer .footer-info .license .license-end .license-end__child {
+  margin: 0 3px;
+}
+
+footer .footer-info .license .license-end .license-end__child::before {
+  content: "|";
+  margin-right: .4em;
+}
+
+footer .footer-info .license .license-end .license-end__child:first-child::before {
+  content: "";
+}
+
+footer .footer-info .company {
+  text-align: center;
+  color: #fff;
+  opacity: .7;
+  font-size: 11px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+footer .footer-info .tag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+footer .footer-info .blue {
+  margin-bottom: 60px;
 }
