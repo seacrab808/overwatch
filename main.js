@@ -51,13 +51,11 @@ new Swiper('.hero .swiper-container', {
 new Swiper('.battle-field .swiper-container', {
   slidesPerView: 1, 
   spaceBetween: 0, 
-  slidesOffsetBefore: 0,
-  slidesOffsetAfter: 0,
   centeredSlides: true, 
   loop: true,
-    // autoplay: {
-  //   delay: 2000 //5s
-  // },
+    autoplay: {
+    delay: 5000 //5s
+  },
   pagination: {
     el: '.battle-field .swiper-pagination', 
     clickable: true, 

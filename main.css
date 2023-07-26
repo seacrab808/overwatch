@@ -780,16 +780,11 @@ header .end .play-now:hover {
 
 /* 전장 */
 .battle-field {
-  position: relative;
-}
-
-.battle-field .inner {
-  position: absolute;
-  top: -30px;
+  width: 100vw;
 }
 
 .battle-field .swpier-wrapper {
-  transition-timing-function: linear;
+
 }
 
 
@@ -798,6 +793,7 @@ header .end .play-now:hover {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  transition: .2s;
 }
 
 .battle-field .push .background {
@@ -835,6 +831,7 @@ header .end .play-now:hover {
 .battle-field .background .back-inner {
   backdrop-filter: blur(40px);
   width: 100vw;
+  height: 930px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -878,6 +875,7 @@ header .end .play-now:hover {
 .battle-field .background .battle-top .swiper-pagination {
   position: absolute;
   top: 290px;
+  text-align: center;
 }
 
 
