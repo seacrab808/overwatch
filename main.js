@@ -27,3 +27,21 @@ menus.forEach(menu => {
     menu.classList.remove('mouseover')
   })
 })
+
+
+
+
+new Swiper('.hero .swiper-container', {
+  // direction: 'horizontal', <- 기본값
+  slidesPerView: 1, //한번에 보여줄 슬라이드 개수
+  spaceBetween: 10, //슬라이드 사이 여백
+  centeredSlides: true, // 1번 슬라이드 가운데 보이기
+  loop: true,
+  // autoplay: {
+  //   delay: 5000 //5s
+  // },
+  pagination: {
+    el: '.hero .swiper-pagination', //페이지 번호 요소 선택자
+    clickable: true, //사용자의 페이지 번호 요소 제어
+  }
+});
