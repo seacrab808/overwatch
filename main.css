@@ -1058,3 +1058,51 @@ margin-right: 15px;
 .release .img-group:hover {
   transform: translateX(-100px);
 }
+
+
+/* 마지막 섹션 */
+.last-hero {
+  background-image: url('./images/하늘배경.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.last-hero .inner img {
+  width: 100%;
+}
+
+.last-hero .text-group {
+  position: absolute;
+  bottom: 100px;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.last-hero .text-group .text {
+  width: 550px;
+  font-size: 62px;
+  font-weight: 900;
+  color: #fff;
+  text-shadow: 0 4px 10px rgba(0,0,0,.2);
+  line-height: 1.2;
+  padding-bottom: 40px;
+  letter-spacing: -8px;
+  word-spacing: 5px;
+}
+
+.last-hero .text-group .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  padding: 8px;
+}
+
+.last-hero .text-group .btn:hover {
+  padding: 8px 12px;
+}
